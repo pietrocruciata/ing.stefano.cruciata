@@ -67,6 +67,8 @@
 
 
 <style scoped>
+@use '../style/partials/palette' as *;
+@use '../style/general';
 .slider {
     width: 100%;
     overflow: hidden;
