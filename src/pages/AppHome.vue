@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="bg-darkgrey">
         <div class="container">
             <AppHeroComponent></AppHeroComponent>
 
@@ -7,7 +7,7 @@
     </section>
 
 
-    <section class="bg-green">
+    <section class="bg-green pt-4">
         <AppServicesComponent></AppServicesComponent>
 
     </section>
@@ -32,7 +32,14 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/palette' as *;
 @use '../style/general';
-.bg-green{
+
+.bg-green {
     background-color: $green;
+    border-top: 4px solid $orange;
+}
+
+.bg-darkgrey{
+    background-color: rgb(34, 34, 34);
+    
 }
 </style>

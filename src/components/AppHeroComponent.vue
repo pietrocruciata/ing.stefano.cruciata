@@ -66,7 +66,7 @@
 
 
 
-<style scoped>
+<style scoped lang="scss">
 @use '../style/partials/palette' as *;
 @use '../style/general';
 .slider {

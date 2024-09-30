@@ -6,7 +6,7 @@
                 <img src="/public/img/Logo_orizzzontale.png" alt="" class="logo">
             
 
-            <nav class="d-flex gap-4 gap-sm-5 align-items-center col-sm-8 justify-content-center">
+            <nav class="d-flex gap-4  align-items-center col-sm-8 justify-content-end me-4">
 
                 <RouterLink :class="$route.fullPath === '/' ? 'text-header' : 'c-green'" :to="{ name: 'home' }">
                     Home
@@ -50,6 +50,7 @@ export default {
     color: $green;
     font-size: 18px;
     padding: 10px;
+    border-right: 4px solid $green;
 
 }
 
@@ -58,10 +59,11 @@ export default {
     font-size: 22px;
     padding: 10px;
     color: $orange;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-right: 4px solid $orange;
+
     // background-color: $green;
 
 }
