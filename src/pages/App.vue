@@ -34,4 +34,12 @@ export default {
 
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use '../style/partials/palette' as *;
+@use '../style/general';
+header{
+
+  background-color: white;
+  border-bottom: 4px solid $orange;
+}
+</style>
