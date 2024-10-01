@@ -18,16 +18,16 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="d-flex flex-column min-vh-100 max-vw-100">
     <header>
       <AppHeader></AppHeader>
     </header>
 
-    <main>
+    <main class="flex-grow-1 bg-green d-flex flex-column justify-content-center">
     <RouterView></RouterView>
     </main>
 
-    <footer>
+    <footer >
       <AppFooter></AppFooter>
     </footer>
   </section>
@@ -41,5 +41,9 @@ header{
 
   background-color: white;
   border-bottom: 4px solid $orange;
+}
+
+.bg-green{
+  background-color: $green;
 }
 </style>

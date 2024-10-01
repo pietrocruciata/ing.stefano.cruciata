@@ -6,7 +6,7 @@
                 <img src="/public/img/Logo_orizzzontale.png" alt="" class="logo">
             
 
-            <nav class="d-flex gap-4  align-items-center col-sm-8 justify-content-end me-4">
+            <nav class="d-flex gap-sm-4 align-items-center col-sm-8 justify-content-sm-end justify-content-center me-4">
 
                 <RouterLink :class="$route.fullPath === '/' ? 'text-header' : 'c-green'" :to="{ name: 'home' }">
                     Home
@@ -68,3 +68,9 @@ export default {
 
 }
 </style>
+
+
+
+
+
+  

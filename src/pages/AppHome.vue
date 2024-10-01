@@ -7,7 +7,7 @@
     </section>
 
 
-    <section class="bg-green pt-4">
+    <section class="bg-green py-5">
         <AppServicesComponent></AppServicesComponent>
 
     </section>
@@ -39,7 +39,7 @@ export default {
 }
 
 .bg-darkgrey{
-    background-color: rgb(34, 34, 34);
+    background-color: $black;
     
 }
 </style>
