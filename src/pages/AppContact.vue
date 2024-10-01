@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="text-orange text-center">Contattami!</div>
-            <div class="description text-center">Per domande o preventivi</div>
+            <div class="description text-center">Per preventivi o eventuali domande</div>
             <form @submit.prevent="sendEmail" class="email-form">
                 <label for="name" class="description">Nome e Cognome:</label>
                 <input type="text" v-model="name" required />

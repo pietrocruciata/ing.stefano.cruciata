@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <section class="d-flex flex-column min-vh-100 max-vw-100">
+  <section class="d-flex flex-column min-vh-100 max-vw-100 overflow">
     <header>
       <AppHeader></AppHeader>
     </header>
@@ -45,5 +45,9 @@ header{
 
 .bg-green{
   background-color: $green;
+}
+
+.overflow{
+  overflow: hidden;
 }
 </style>
