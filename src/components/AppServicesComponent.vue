@@ -1,8 +1,8 @@
 <template>
     
-        <div class="row ">
+        <div class="row mx-5 ">
             <div class="services text-center mb-4">SERVIZI E COMPETENZE</div>
-            <div class="col-md-3 text-center p-3 p-sm-2">
+            <div class="col-md-3 text-center  p-sm-2">
                 <img src="/img/houzz.png" alt="" class="img-size">
 
                 <div class="text-orange">
