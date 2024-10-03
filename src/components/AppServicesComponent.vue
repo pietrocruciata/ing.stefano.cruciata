@@ -1,12 +1,18 @@
 <template>
+      <div class="services text-center py-5 mb-4">
+        SERVI<span class="underline">ZI E COMPET</span>ENZE
 
-    <div class="row mx-5 ">
-        <div class="services text-center mb-4">SERVIZI E COMPETENZE</div>
-        <div class="col-md-3 text-center  p-sm-2">
+    </div>
+<section class="services-section">
+  
+    <div class="row mx-2 justify-content-around">
+
+
+        <div class="w-services text-center pt-5  mt-5  mt-5">
             <img src="/img/houzz.png" alt="" class="img-size">
 
-            <div class="text-orange">
-                Progettazione Strutturale
+            <div class="text-orange ">
+                Progettazione
             </div>
             <div class="description ">
                 Progettazione strutturale e architettonica di nuove opere edili, sia parzialmente che nella loro
@@ -16,7 +22,7 @@
             </div>
 
         </div>
-        <div class="col-md-3 text-center p-3 p-sm-2">
+        <div class="w-services text-center  pt-5 mt-5">
             <div class="text-orange">
                 <div>
                     <img src="/img/workers.png" alt="" class="img-size">
@@ -31,7 +37,7 @@
                 delle possibili anomalie costruttive, delle opere in variante e della contabilità di cantiere.
             </div>
         </div>
-        <div class="col-md-3 text-center p-3 p-sm-2">
+        <div class="w-services text-center  pt-5 mt-5">
             <div>
                 <img src="/img/confirm.png" alt="" class="img-size">
 
@@ -46,7 +52,7 @@
                 degli edifici (APE).
             </div>
         </div>
-        <div class="col-md-3 text-center p-3 p-sm-2">
+        <div class="w-services text-center pt-5  mt-5">
             <div>
                 <img src="/img/renovation.png" alt="" class="img-size">
 
@@ -61,6 +67,8 @@
             </div>
         </div>
     </div>
+</section>
+    
 
 </template>
 
@@ -75,13 +83,23 @@ export default {
 @use '../style/general';
 
 
+.services-section{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.underline{
+    font-family: math;
+    border-bottom: 2px solid $orange;
+}
+
 .img-size {
 
     width: 100px;
 }
 
 .text-orange {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 700;
     color: $orange;
 }
@@ -90,12 +108,30 @@ export default {
     color: white;
     font-weight: 600;
     font-size: 18;
+    text-align: justify;
 }
 
 .services {
     color: white;
     font-size: 38px;
     font-weight: 700;
-    // background-color: $orange;
+    font-family: math;
+    background-color: white;
+    color: black;
+    
+
+}
+
+.w-services{
+    width: 23%;
+    background-color: #398788;
+    box-shadow: 0 8px 16px $black;
+    border-radius: 20px;
+    padding: 25px;
+    
+    
+    @media (max-width: 1200px) {
+    width: 100%; 
+  }
 }
 </style>

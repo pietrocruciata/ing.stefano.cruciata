@@ -23,7 +23,7 @@ export default {
       <AppHeader></AppHeader>
     </header>
 
-    <main class="flex-grow-1 bg-green d-flex flex-column justify-content-center">
+    <main class="flex-grow-1 bg-green d-flex flex-column">
     <RouterView></RouterView>
     </main>
 
@@ -45,6 +45,7 @@ header{
 
 .bg-green{
   background-color: $green;
+  margin-top: 115px;
 }
 
 .overflow{

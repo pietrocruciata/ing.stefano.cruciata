@@ -1,10 +1,11 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-around align-items-center p-4">
-            <div class="col-md-4">
-                <img src="/img/fotoprofilo.jpeg" alt="" class="profile animate__animated animate__fadeInLeft">
+    <section class="me">
+        <div class="col-md-4 text-center d-md-none mt-5">
+                <img src="/img/fotoprofilo.jpeg" alt="" class="profile animate__animated animate__fadeInRight">
             </div>
-            <div class="col-md-6 animate__animated animate__fadeInRight description text-center mt-5">
+        
+        <div class="row justify-content-around align-items-center p-4 mt-2 mt-md-5 ">
+            <div class="col-md-6 animate__animated animate__fadeInLeft description text-center  ms-md-5">
                 <div class="text-orange">SU DI ME</div>
                 <span class="marks">"</span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic consequuntur, consequatur aut, sit,
@@ -15,8 +16,14 @@
                 nesciunt? Rerum esse expedita modi aliquam vel incidunt placeat corporis molestiae deleniti.
                 <span class="marks">"</span>
             </div>
+            <div class="col-md-4 text-center d-none d-md-block">
+                <img src="/img/fotoprofilo.jpeg" alt="" class="profile animate__animated animate__fadeInRight">
+            </div>
+            
         </div>
-    </div>
+   
+    </section>
+    
 </template>
 
 <script>
@@ -29,10 +36,17 @@ export default {
 @use '../style/partials/palette' as *;
 @use '../style/general';
 
+.me{
+    // margin-top: 50px;
+    @media (max-width: 991px) {
+    margin-top: 0;
+  }
+}
 
 .profile {
-    box-shadow: 0 8px 16px $orange;
+    box-shadow: 0 8px 16px $black;
     border-radius: 20px;
+    width: 350px;
 }
 
 .description {

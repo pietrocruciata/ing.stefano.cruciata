@@ -26,7 +26,8 @@ ol {
 }
 
 header {
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	z-index: 300;
 	top: 0;
 }

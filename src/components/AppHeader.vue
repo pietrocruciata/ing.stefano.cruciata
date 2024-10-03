@@ -28,8 +28,8 @@
         </nav>
       </div>
   
-      <nav class="mobile-menu " v-if="isOpen && isMobile">
-        <ul>
+      <nav class="mobile-menu py-4" v-if="isOpen && isMobile">
+        <ul class="d-flex justify-content-around">
           <li @click="navigateTo('home')">Home</li>
           <li @click="navigateTo('projects')">Progetti</li>
           <li @click="navigateTo('contact')">Contatti</li>
@@ -87,6 +87,11 @@ export default {
   font-size: 18px;
   padding: 10px;
   border-right: 4px solid $green;
+  &:hover{
+    background-color: $green;
+    color: white;
+    
+  }
 }
 
 .text-header {
@@ -97,6 +102,8 @@ export default {
   align-items: center;
   justify-content: center;
   border-right: 4px solid $orange;
+
+
 }
 
 .hamburger {
@@ -104,7 +111,7 @@ export default {
   flex-direction: column;
   cursor: pointer;
 
-  @media (max-width: 700px) {
+  @media (max-width: 767px) {
     display: flex; 
   }
 }
@@ -122,13 +129,16 @@ export default {
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 60px; 
-  right: 10px;
-  background: white;
-  border: 1px solid $black;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+    position: absolute;
+    left: 0;
+    top: 111px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid $orange;
+    
 }
+
 
 .mobile-menu ul {
   list-style: none;
@@ -137,13 +147,19 @@ export default {
 }
 
 .mobile-menu li {
-  padding: 10px 20px;
+  padding: 10px 10px;
   cursor: pointer;
-  color: $black;
+  color: $green;
+  font-size: 22px;
+  // box-shadow: 0 2px px $black;
+  // border-radius: 20px;
+
+  
+ 
 }
 
 .mobile-menu li:hover {
-  background: $blue;
+  background: $orange;
   color: white;
 }
 </style>

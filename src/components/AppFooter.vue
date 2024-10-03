@@ -1,15 +1,15 @@
 <template>
-    <section class="bg-darkgrey pt-4">
+    <section class="bg-darkgrey ">
      <div class="container">
         <div class="row justify-content-between p-4">
            
             <div class="col-md-2">
                 <div class="text-orange mb-2">
-                    INFO
+                    
                 </div>
                 <div class="description">
-                    <p>Mail: <a href="mailto:stefano.cruciata.93@gmail.com" class="social">Stefano.cruciata.93@gmail.com</a></p>
-                    <p>Cell: <a href="tel:+393279527700" class="social">+39 3279527700</a></p>
+                    <p><a href="mailto:stefano.cruciata.93@gmail.com" class="social">Stefano.cruciata.93@gmail.com</a></p>
+                    <p><a href="tel:+393279527700" class="social">+39 3279527700</a></p>
                     <p>P.IVA: 12556230014</p>
                 </div>
             </div>
@@ -20,11 +20,11 @@
 
             <div class="col-md-2 text-lg-end">
                 <div class="text-orange mb-2">
-                    AREE OPERATIVE
+                    
                 </div>
                 <p class="description">Torino, (TO)</p>
                 <p class="description">Milano, (MI)</p>
-                <p class="description">FIRENZE, (FI)</p>
+                <p class="description">Firenze, (FI)</p>
             </div>
             
         </div>

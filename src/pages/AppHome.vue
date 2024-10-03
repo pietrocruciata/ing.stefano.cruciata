@@ -7,7 +7,7 @@
     </section>
 
 
-    <section class="bg-green py-5">
+    <section class="bg-green pb-3 ">
         <AppServicesComponent></AppServicesComponent>
 
     </section>
