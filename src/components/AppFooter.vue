@@ -3,7 +3,7 @@
      <div class="container">
         <div class="row justify-content-between p-4">
            
-            <div class="col-md-2">
+            <div class="col-6 col-md-2">
                 <div class="text-orange mb-2">
                     
                 </div>
@@ -14,11 +14,11 @@
                 </div>
             </div>
 
-            <div class="col-md-8 text-center logo p-3">
+            <div class="col-md-8 d-none d-md-block text-center logo p-3">
                 <img src="/img/Logo_orizzzontale_ristretto.png" alt="">
             </div>
 
-            <div class="col-md-2 text-lg-end">
+            <div class="col-6 col-md-2 text-lg-end text-end">
                 <div class="text-orange mb-2">
                     
                 </div>
@@ -26,8 +26,13 @@
                 <p class="description">Milano, (MI)</p>
                 <p class="description">Firenze, (FI)</p>
             </div>
+
+            
             
         </div>
+        <div class="col-md-8 text-center logo p-3 d-md-none text-center">
+                <img src="/img/Logo_orizzzontale_ristretto.png" alt="">
+            </div>
      </div>
     </section>
 </template>
