@@ -1,6 +1,6 @@
 <template>
-    <div class="container mt-4">
-        <div class="row">
+    <div class="container mt-4 ">
+        <div class="row animate__animated animate__zoomIn">
             <div class="text-orange text-center">Contattami</div>
             <div class="description text-center">Per info domande e preventivi</div>
             <form @submit.prevent="sendEmail" class="email-form">

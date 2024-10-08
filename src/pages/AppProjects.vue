@@ -1,11 +1,11 @@
 <template>
-    <section class="pb-5">
+    <section class="pb-5 ">
 
   
-    <div class="services text-center py-5">
+    <div class="services text-center py-5 animate__animated animate__zoomIn">
         ALC<span class="underline">UNI LAV</span>ORI
     </div>
-    <div class="container">
+    <div class="container ">
         <div class="row gap-5 justify-content-center">
             <ProjectCardComponent v-for="(project, i) in store.data" :key="i" :project="project">
             </ProjectCardComponent>
