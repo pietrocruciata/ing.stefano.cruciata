@@ -1,24 +1,37 @@
 <template>
+    <section class="pb-5">
+
+  
     <div class="services text-center py-5">
         ALC<span class="underline">UNI LAV</span>ORI
     </div>
     <div class="container">
-        <div class="row">
-            <div v-for="(project, i) in projects" :key="i" :item="item">
-                <ProjectCardComponent></ProjectCardComponent>
-            </div>
+        <div class="row gap-5 justify-content-center">
+            <ProjectCardComponent v-for="(project, i) in store.data" :key="i" :project="project">
+            </ProjectCardComponent>
         </div>
     </div>
-
+</section>
 
 </template>
 
 <script>
 import ProjectCardComponent from '../components/ProjectCardComponent.vue';
+import { store } from '../store';
 
 export default {
     components: {
         ProjectCardComponent
+    },
+
+    data() {
+        return {
+            store
+        }
+    },
+    mounted() {
+        console.log(this.store.projects);
+
     }
 }
 </script>

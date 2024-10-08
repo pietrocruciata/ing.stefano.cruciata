@@ -1,35 +1,79 @@
 <template>
-    <RouterLink :to="{ name: 'project', params: { id: item.id } }" class="card  col-md-3 ">
-      <img :src="item.image" alt="">
+  <RouterLink class="  col-lg-3 project " :to="{ name: 'project', params: { id: project.id } }">
+    <img :src="project.img" alt="" class="img-projects">
 
-      <div class="p-3 text-center">
-        <h4 class="card-title title mt-2 mb-1">
-          {{ item.name }}
-        </h4>
+    <div class="card-body bg-white">
+      <div class="city-zone p-1 d-flex justify-content-between ">
+        <div>
+          <img src="/img/place.png" alt="" class="place-size">{{ project.city }}
 
+        </div>
+        <div>
+          <img src="/public/img/client.png" alt="" class="place-size me-1">{{ project.committente }}
+        </div>
       </div>
+      <div class=" p-2">
+        <span class="name me-2">{{ project.name }}</span>{{ project.description }}
+      </div>
+
+    </div>
+
 
   </RouterLink>
 </template>
 
 <script>
-    export default {
-        data() {
+import { RouterLink } from 'vue-router';
+
+export default {
+  data() {
     return {
-      store,
 
     }
   },
 
   props: {
-    item: {
+    project: {
       type: Object,
     },
 
   },
-    }
+}
 </script>
 
 <style lang="scss" scoped>
+@use '../style/partials/palette' as *;
+@use '../style/general';
 
+.img-projects {
+  width: 100%;
+  height: 200px;
+
+  @media(max-width: 991px) {
+    height: auto;
+  }
+}
+
+.project {
+  box-shadow: 0 8px 16px $black;
+
+  &:hover {
+    transform: scale(1.05);
+
+  }
+}
+
+.city-zone {
+  background-color: $blue;
+  color: white;
+}
+
+.name {
+  color: $orange;
+  font-size: 22px;
+}
+
+.place-size {
+  width: 20px;
+}
 </style>

@@ -5,13 +5,13 @@
             <div class="description text-center">Per info domande e preventivi</div>
             <form @submit.prevent="sendEmail" class="email-form">
                 <label for="name" class="description">Nome e Cognome:</label>
-                <input type="text" v-model="name" required />
+                <input type="text" v-model="name" required placeholder="Nome e Cognome..."/>
                 <div class="my-4">
                     <label for="email" class="description">Email:</label>
-                    <input type="email" v-model="email" required />
+                    <input type="email" v-model="email" required placeholder="Email..."/>
                 </div>
                 <label for="message" class="description">Messaggio:</label>
-                <textarea v-model="message" required></textarea>
+                <textarea v-model="message" required placeholder="Messaggio..."></textarea>
                 <button type="submit">Invia</button>
             </form>
             <div v-if="statusMessage" :style="{ color: statusColor }" class="mt-2 status">
@@ -40,7 +40,6 @@ export default {
 
             const templateParams = {
                 from_name: this.name,
-                from_email: this.email,
                 message: this.message,
                 reply_to: this.email
             };
@@ -49,6 +48,9 @@ export default {
                 .then((response) => {
                     this.statusMessage = 'Messaggio inviato con successo!';
                     this.statusColor = 'white';
+                    this.name= '';
+                    this.email= '';
+                    this.message= '';
                 }, (error) => {
                     this.statusMessage = 'Errore nell\'invio del messaggio.';
                     this.statusColor = 'red';

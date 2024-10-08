@@ -3,6 +3,7 @@ import AppHeader from '../components/AppHeader.vue';
 import AppFooter from '../components/AppFooter.vue';
 import { RouterLink } from 'vue-router';
 import { RouterView } from 'vue-router';
+import { store } from '../store';
 export default {
   components: {
     AppHeader,
@@ -10,8 +11,11 @@ export default {
   },
   data() {
     return {
-
+      store
     }
+  },
+  mounted(){
+    this.store.getdata()
   }
 }
 
@@ -24,10 +28,10 @@ export default {
     </header>
 
     <main class="flex-grow-1 bg-green d-flex flex-column">
-    <RouterView></RouterView>
+      <RouterView></RouterView>
     </main>
 
-    <footer >
+    <footer>
       <AppFooter></AppFooter>
     </footer>
   </section>
@@ -37,18 +41,19 @@ export default {
 <style scoped lang="scss">
 @use '../style/partials/palette' as *;
 @use '../style/general';
-header{
+
+header {
 
   background-color: white;
   border-bottom: 4px solid $orange;
 }
 
-.bg-green{
+.bg-green {
   background-color: $green;
   margin-top: 115px;
 }
 
-.overflow{
+.overflow {
   overflow: hidden;
 }
 </style>

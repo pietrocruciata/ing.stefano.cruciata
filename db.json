@@ -1,0 +1,59 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "mole",
+      "img": "/img/mole.webp",
+      "committente": "Babbuino",
+      "city": "TORINO",
+      "collabs": "David",
+      "description": "bello palazzo molto bello stupendo fantastico"
+    },
+    {
+      "id": 1,
+      "name": "Palazzo Moderno",
+      "img": "/img/building.jpg",
+      "committente": "Babbuino",
+      "city": "TORINO",
+      "collabs": "David",
+      "description": "bello palazzo molto bello stupendo fantastico"
+    },
+    {
+      "id": 1,
+      "name": "Palazzo di vetro",
+      "img": "/img/building-2.jpg",
+      "committente": "Babbuino",
+      "city": "TORINO",
+      "collabs": "David",
+      "description": "bello palazzo molto bello stupendo fantastico"
+    },
+    {
+      "id": 1,
+      "name": "mole",
+      "img": "/img/building-2.jpg",
+      "committente": "Babbuino",
+      "city": "TORINO",
+      "collabs": "David",
+      "description": "bello palazzo molto bello stupendo fantastico"
+    },
+    {
+      "id": 1,
+      "name": "mole",
+      "img": "/img/mole.webp",
+      "committente": "Babbuino",
+      "city": "TORINO",
+      "collabs": "David",
+      "description": "bello palazzo molto bello stupendo fantastico"
+    },
+    {
+      "id": 1,
+      "name": "mole",
+      "img": "/img/mole.webp",
+      "committente": "Babbuino",
+      "city": "TORINO",
+      "collabs": "David",
+      "description": "bello palazzo molto bello stupendo fantastico"
+    }
+
+  ]
+}
