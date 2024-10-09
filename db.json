@@ -7,10 +7,10 @@
       "committente": "Babbuino",
       "city": "TORINO",
       "collabs": "David",
-      "description": "bello palazzo molto bello stupendo fantastico"
+      "description": "bello palazzo molto bello stupendo fantastico bello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantastico"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Palazzo Moderno",
       "img": "/img/building.jpg",
       "committente": "Babbuino",
@@ -19,7 +19,7 @@
       "description": "bello palazzo molto bello stupendo fantastico"
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Palazzo di vetro",
       "img": "/img/building-2.jpg",
       "committente": "Babbuino",
@@ -28,7 +28,7 @@
       "description": "bello palazzo molto bello stupendo fantastico"
     },
     {
-      "id": 1,
+      "id": 4,
       "name": "mole",
       "img": "/img/building-2.jpg",
       "committente": "Babbuino",
@@ -37,7 +37,7 @@
       "description": "bello palazzo molto bello stupendo fantastico"
     },
     {
-      "id": 1,
+      "id": 5,
       "name": "mole",
       "img": "/img/mole.webp",
       "committente": "Babbuino",
@@ -46,7 +46,7 @@
       "description": "bello palazzo molto bello stupendo fantastico"
     },
     {
-      "id": 1,
+      "id": 6,
       "name": "mole",
       "img": "/img/mole.webp",
       "committente": "Babbuino",
@@ -54,6 +54,5 @@
       "collabs": "David",
       "description": "bello palazzo molto bello stupendo fantastico"
     }
-
   ]
 }

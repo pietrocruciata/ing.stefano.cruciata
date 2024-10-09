@@ -1,26 +1,44 @@
 <template>
-    <section class="bg-darkblue d-flex justify-content-center">
-        <div class="container">
-            <div class="row ">
-                <RouterLink class="view-document mx-5 my-2" :to="{ name: 'projects' }">
+    <section class="">
+
+
+        <!-- <RouterLink class="view-document mx-5 my-2" :to="{ name: 'projects' }">
                     indietro
-                </RouterLink>
+                </RouterLink> -->
 
-                <div class="title">
-                    {{ store.data.name }}
-                </div>
-                <div>
-                    <img :src="store.data.img" alt="">
-                </div>
-
-                <div class="text-center my-3 description px-4 py-2">
-                    {{ store.data.description }}
-
-                </div>
-
-
+        <div class="services text-center py-3 animate__animated animate__zoomIn">
+            <span class="underline">{{ store.data[$route.params.id].name }}</span>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-4 ">
+                <img :src="store.data[$route.params.id].img" alt="" class="img-size">
+            </div>
+            <div class="col-4 d-none d-lg-flex">
+                <img :src="store.data[$route.params.id].img" alt="" class="img-size">
+            </div>
+            <div class="col-4 d-none d-lg-flex">
+                <img :src="store.data[$route.params.id].img" alt="" class="img-size">
             </div>
         </div>
+
+        <div class="d-flex ">
+            <div class="col-lg-4 bg-lightblue p-3">
+            <ul class="text-orange">Committente
+                <li class="description">{{ store.data[$route.params.id].committente }}</li>
+            </ul>
+            
+            </div>
+            <div class="text-center p-3  description  col-lg-8 bg-blue ">
+                {{ store.data[$route.params.id].description }}
+            </div>
+
+
+        </div>
+
+
+
+
+
     </section>
 </template>
 
@@ -53,4 +71,50 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../style/partials/palette' as *;
+@use '../style/general';
+
+.img-size {
+    height: 250px;
+    width: 100%;
+}
+
+.services {
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: math;
+    background-color: $green;
+    color: black;
+
+}
+
+.underline {
+    font-family: math;
+    border-bottom: 2px solid $orange;
+}
+
+.description {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: justify;
+    font-family: math;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-lightblue {
+    background-color: #5286bd;
+
+}
+
+.text-orange {
+    font-size: 22px;
+    font-weight: 700;
+    color: $orange;
+}
+</style>

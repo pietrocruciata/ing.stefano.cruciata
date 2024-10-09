@@ -7,8 +7,9 @@
     </div>
     <div class="container ">
         <div class="row gap-5 justify-content-center">
-            <ProjectCardComponent v-for="(project, i) in store.data" :key="i" :project="project">
+            <ProjectCardComponent v-for="(project, i) in store.data" :key="i" :project="project" :i="i">
             </ProjectCardComponent>
+            
         </div>
     </div>
 </section>

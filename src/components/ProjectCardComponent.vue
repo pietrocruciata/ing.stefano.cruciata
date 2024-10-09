@@ -1,5 +1,5 @@
 <template>
-  <RouterLink class="  col-lg-3 project " :to="{ name: 'project', params: { id: project.id } }">
+  <RouterLink class="  col-lg-3 project " :to="{ name: 'project', params: { id: i } }">
     <img :src="project.img" alt="" class="img-projects">
 
     <div class="card-body bg-white">
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class=" p-2">
-        <span class="name me-2">{{ project.name }}</span>{{ project.description }}
+        <span class="name me-2">{{ project.name }}</span>
       </div>
 
     </div>
@@ -34,6 +34,9 @@ export default {
     project: {
       type: Object,
     },
+    i: {
+      type: Number
+    }
 
   },
 }
