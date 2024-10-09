@@ -2,16 +2,17 @@
   "projects": [
     {
       "id": 1,
-      "name": "mole",
+      "name": "MOLE",
       "img": "/img/mole.webp",
       "committente": "Babbuino",
       "city": "TORINO",
       "collabs": "David",
-      "description": "bello palazzo molto bello stupendo fantastico bello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantastico"
+      "description": "bello palazzo molto bello stupendo fantastico bello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantasticobello palazzo molto bello stupendo fantastico",
+      "date": "2021"
     },
     {
       "id": 2,
-      "name": "Palazzo Moderno",
+      "name": "PALAZZO MODERNO",
       "img": "/img/building.jpg",
       "committente": "Babbuino",
       "city": "TORINO",
@@ -20,7 +21,7 @@
     },
     {
       "id": 3,
-      "name": "Palazzo di vetro",
+      "name": "PALAZZO DI VETRO",
       "img": "/img/building-2.jpg",
       "committente": "Babbuino",
       "city": "TORINO",
@@ -29,7 +30,7 @@
     },
     {
       "id": 4,
-      "name": "mole",
+      "name": "MOLE",
       "img": "/img/building-2.jpg",
       "committente": "Babbuino",
       "city": "TORINO",
@@ -38,7 +39,7 @@
     },
     {
       "id": 5,
-      "name": "mole",
+      "name": "MOLE",
       "img": "/img/mole.webp",
       "committente": "Babbuino",
       "city": "TORINO",
@@ -47,7 +48,7 @@
     },
     {
       "id": 6,
-      "name": "mole",
+      "name": "MOLE",
       "img": "/img/mole.webp",
       "committente": "Babbuino",
       "city": "TORINO",

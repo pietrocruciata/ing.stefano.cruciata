@@ -5,15 +5,15 @@
     <div class="card-body bg-white">
       <div class="city-zone p-1 d-flex justify-content-between ">
         <div>
-          <img src="/img/place.png" alt="" class="place-size">{{ project.city }}
+          <img src="/img/place.png" alt="" class="place-size ms-2">{{ project.city }}
 
         </div>
-        <div>
-          <img src="/public/img/client.png" alt="" class="place-size me-1">{{ project.committente }}
+        <div class="me-2">
+          {{ project.date }}
         </div>
       </div>
       <div class=" p-2">
-        <span class="name me-2">{{ project.name }}</span>
+        <span class="name me-2">{{ project.name }}</span> <div >Nuova Opera</div>
       </div>
 
     </div>
@@ -46,6 +46,8 @@ export default {
 @use '../style/partials/palette' as *;
 @use '../style/general';
 
+
+
 .img-projects {
   width: 100%;
   height: 200px;
@@ -60,12 +62,13 @@ export default {
 
   &:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px $orange;
 
   }
 }
 
 .city-zone {
-  background-color: $blue;
+  background-color:  #398788;
   color: white;
 }
 

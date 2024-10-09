@@ -6,8 +6,11 @@
                     indietro
                 </RouterLink> -->
 
-        <div class="services text-center py-3 animate__animated animate__zoomIn">
-            <span class="underline">{{ store.data[$route.params.id].name }}</span>
+        <div class="description  py-3 animate__animated animate__zoomIn container text-center">
+            <div>
+                <span class="underline services ms-3">{{ store.data[$route.params.id].name }}</span>
+
+            </div>
         </div>
         <div class="d-flex justify-content-center">
             <div class="col-lg-4 ">
@@ -21,15 +24,39 @@
             </div>
         </div>
 
-        <div class="d-flex ">
+        <div class="d-lg-flex ">
             <div class="col-lg-4 bg-lightblue p-3">
-            <ul class="text-orange">Committente
-                <li class="description">{{ store.data[$route.params.id].committente }}</li>
-            </ul>
-            
+                <div class="d-flex justify-content-between">
+                    <ul class="text-orange">Committente
+                        <li class="description">{{ store.data[$route.params.id].committente }}</li>
+                    </ul>
+                    <div class="description mt-1">
+                        <img src="/img/place.png" alt="" class="place-size "><span>{{ store.data[$route.params.id].city
+                            }}</span>
+                            <div class="text-end">{{ store.data[$route.params.id].date
+                            }}</div>
+                    </div>
+                </div>
+
+                <ul class="text-orange">Prestazioni
+                    <li class="description">-Responsabile dei lavori </li>
+                    <li class="description">-Coordinazione dei lavori in fase di progettazione ed esecuzione</li>
+
+                </ul>
+
+                <ul class="text-orange">Responsabile Progetto
+                    <li class="description">
+                        David
+                    </li>
+                </ul>
+
             </div>
-            <div class="text-center p-3  description  col-lg-8 bg-blue ">
-                {{ store.data[$route.params.id].description }}
+            <div class="text-center p-5  description-large  col-lg-8 bg-blue d-flex  flex-column">
+
+                <div class="">
+                    {{ store.data[$route.params.id].description }}
+
+                </div>
             </div>
 
 
@@ -86,16 +113,25 @@ export default {
     font-weight: 700;
     font-family: math;
     background-color: $green;
-    color: black;
+    color: white;
 
 }
 
 .underline {
     font-family: math;
     border-bottom: 2px solid $orange;
+
 }
 
 .description {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+    font-family: math;
+}
+
+.description-large{
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -113,8 +149,13 @@ export default {
 }
 
 .text-orange {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: $orange;
+}
+
+.place-size {
+    width: 20px;
+    margin-bottom: 5px;
 }
 </style>
