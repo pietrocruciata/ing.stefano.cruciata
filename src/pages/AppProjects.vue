@@ -1,24 +1,26 @@
 <template>
     <section class="pb-5 ">
 
-  
-    <div class="services text-center py-5 animate__animated animate__zoomIn">
-        ALC<span class="underline">UNI LAV</span>ORI
-    </div>
-    <div class="container ">
-        <div class="row gap-5 justify-content-center">
-            <ProjectCardComponent v-for="(project, i) in store.data" :key="i" :project="project" :i="i">
-            </ProjectCardComponent>
-            
+
+        <div class="services text-center py-5 animate__animated animate__zoomIn">
+            ALC<span class="underline">UNI LAV</span>ORI
         </div>
-    </div>
-</section>
+        <div class="container ">
+            <div class="row gap-5 justify-content-center">
+                <ProjectCardComponent v-for="(project, i) in store.data" :key="i" :project="project" :i="i">
+                </ProjectCardComponent>
+
+            </div>
+        </div>
+    </section>
 
 </template>
 
 <script>
 import ProjectCardComponent from '../components/ProjectCardComponent.vue';
 import { store } from '../store';
+// import { db } from '../firebase';
+// import { collection, getDocs } from "firebase/firestore";
 
 export default {
     components: {
@@ -27,9 +29,16 @@ export default {
 
     data() {
         return {
-            store
+            store,
+            projects: []
         }
     },
+    // async created() {
+    //     const querySnapshot = await getDocs(collection(db, "projects"));
+    //     querySnapshot.forEach((doc) => {
+    //         this.projects.push({ id: doc.id, ...doc.data() });
+    //     });
+    // },
     mounted() {
         console.log(this.store.projects);
 

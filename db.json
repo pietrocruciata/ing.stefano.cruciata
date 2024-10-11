@@ -3,7 +3,9 @@
     {
       "id": 1,
       "name": "MOLE",
-      "img": "/img/mole.webp",
+      "imgNow": "/img/mole.webp",
+      "imgStart": "/img/building.jpg",
+      "imgMedium": "/img/building-2.jpg",
       "committente": "Babbuino",
       "city": "TORINO",
       "collabs": "David",
