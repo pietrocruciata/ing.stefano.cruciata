@@ -1,6 +1,6 @@
 <template>
   <RouterLink class="  col-lg-3 project " :to="{ name: 'project', params: { id: i } }">
-    <img :src="project.imgNow" alt="" class="img-projects">
+    <img :src="project.img" alt="" class="img-projects">
 
     <div class="card-body bg-white">
       <div class="city-zone p-1 d-flex justify-content-between ">

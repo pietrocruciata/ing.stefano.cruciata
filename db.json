@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "MOLE",
+      "img":"/img/building-2.jpg",
       "imgNow": "/img/mole.webp",
       "imgStart": "/img/building.jpg",
       "imgMedium": "/img/building-2.jpg",
